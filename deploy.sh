@@ -12,8 +12,8 @@ export KIBANA_ES_URL="${KIBANA_ES_SCHEME}://${KIBANA_ES_HOST}:${KIBANA_ES_PORT}"
 # Generate a databse configuration
 cat << EOF > ${KIBANA_HOME}/config/kibana.yml
 elasticsearch.url:${KIBANA_ES_URL}
-path.data:data
-pid.file:temp
+path.data:${PLATFORM_APP_DIR}/data
+pid.file:${PLATFORM_APP_DIR}/temp
 server.port:${PORT}
 EOF
 

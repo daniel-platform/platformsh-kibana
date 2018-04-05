@@ -12,7 +12,7 @@ mounts:
     data:
         source: local
         source_path: data
-    optimize:
+    kibana/optimize:
         source: local
         source_path: optimize
 
