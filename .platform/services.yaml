@@ -1,0 +1,3 @@
+billinges:
+  type: elasticsearch:6.2
+  disk: 2048

@@ -1,0 +1,22 @@
+name: billing
+type: nodejs:8.9
+disk: 2048
+
+relationships:
+    billinges: "billinges:elasticsearch"
+
+mounts:
+    temp:
+        source: local
+        source_path: temp
+    data:
+        source: local
+        source_path: data
+
+web:
+  commands:
+    start: "sh ./start.sh"
+
+hooks:
+    build: "bash ${PLATFORM_APP_DIR}/build.sh"
+    deploy: "sh ${PLATFORM_APP_DIR}/deploy.sh"
