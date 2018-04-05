@@ -12,6 +12,9 @@ mounts:
     data:
         source: local
         source_path: data
+    optimize:
+        source: local
+        source_path: optimize
 
 web:
   commands:
