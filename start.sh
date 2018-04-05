@@ -4,4 +4,5 @@
 . ./header.inc
 
 # Start Kibana
-${KIBANA_HOME}/bin/kibana
+cd ${KIBANA_HOME}
+bin/kibana
