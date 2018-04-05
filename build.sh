@@ -2,7 +2,7 @@
 
 KIBANA_VERSION=6.2.3
 
-KIBANA_DOWNLOAD_URI="https://artifacts.elastic.co/downloads/kibana/"
+KIBANA_DOWNLOAD_URI="https://artifacts.elastic.co/downloads/kibana"
 KIBANA_DL_ARCHIVE="kibana-${KIBANA_VERSION}-linux-x86_64.tar.gz"
 
 # Make directories
