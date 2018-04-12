@@ -1,5 +1,5 @@
 name: billing
-type: nodejs:8.9
+type: python:3.6
 disk: 2048
 
 relationships:
@@ -22,5 +22,5 @@ web:
 
 hooks:
     build: "bash ${PLATFORM_APP_DIR}/build.sh"
-    deploy: "echo Deploying; bash ${PLATFORM_APP_DIR}/deploy.sh"
+    deploy: "sh ${PLATFORM_APP_DIR}/deploy.sh"
 
