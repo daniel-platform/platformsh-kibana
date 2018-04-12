@@ -18,7 +18,7 @@ echo "Generating Configuration..."
 cat << EOF > ${PLATFORM_APP_DIR}/config/kibana_config.yml
 elasticsearch.url: ${KIBANA_ES_URL}
 path.data: ${PLATFORM_APP_DIR}/data
-pid.file: ${PLATFORM_APP_DIR}/temp
+pid.file: ${PLATFORM_APP_DIR}/temp/kibana.pid
 server.port: ${PORT}
 EOF
 
