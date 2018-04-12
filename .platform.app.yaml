@@ -22,5 +22,5 @@ web:
 
 hooks:
     build: "bash ${PLATFORM_APP_DIR}/build.sh"
-    deploy: "bash ${PLATFORM_APP_DIR}/deploy.sh"
+    deploy: "sh ${PLATFORM_APP_DIR}/deploy.sh"
 
