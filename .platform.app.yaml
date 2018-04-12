@@ -1,5 +1,5 @@
 name: billing
-type: python:3.6
+type: nodejs:8.9
 disk: 2048
 
 relationships:
@@ -15,12 +15,14 @@ mounts:
     kibana/optimize:
         source: local
         source_path: optimize
+    config:
+        source: local
+        source_path: config     
 
 web:
   commands:
-    start: "sh ./start.sh"
+    start: "sh ./deploy.sh; sh ./start.sh"
 
 hooks:
     build: "bash ${PLATFORM_APP_DIR}/build.sh"
-    deploy: "sh ${PLATFORM_APP_DIR}/deploy.sh"
 
