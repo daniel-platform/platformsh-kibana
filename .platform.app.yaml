@@ -9,7 +9,7 @@ mounts:
     temp:
         source: local
         source_path: temp
-    data:
+    kibana/data:
         source: local
         source_path: data
     kibana/optimize:
