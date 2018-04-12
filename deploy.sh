@@ -9,6 +9,8 @@ export KIBANA_ES_HOST=$(bin/json_env PLATFORM_RELATIONSHIPS billinges.elasticsea
 export KIBANA_ES_SCHEME=$(bin/json_env PLATFORM_RELATIONSHIPS billinges.elasticsearch.scheme)
 export KIBANA_ES_URL="${KIBANA_ES_SCHEME}://${KIBANA_ES_HOST}:${KIBANA_ES_PORT}"
 
+echo "Generating Configuration..."
+
 # Generate a databse configuration
 cat << EOF > ${KIBANA_HOME}/config/kibana.yml
 elasticsearch.url:${KIBANA_ES_URL}
