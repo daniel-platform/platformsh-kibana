@@ -21,7 +21,7 @@ elasticsearch.url: ${KIBANA_ES_URL}
 path.data: ${KIBANA_HOME}/data
 pid.file: ${PLATFORM_APP_DIR}/temp/kibana.pid
 server.port: ${PORT}
-server.host: ${IP}
+server.host: 0.0.0.0
 logging.verbose: true
 EOF
 
