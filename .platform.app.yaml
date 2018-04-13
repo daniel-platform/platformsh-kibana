@@ -1,5 +1,5 @@
 name: billing
-type: java:8
+type: nodejs:8.9
 disk: 2048
 
 relationships:
