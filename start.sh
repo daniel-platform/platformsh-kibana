@@ -5,4 +5,4 @@
 
 # Start Kibana
 cd ${KIBANA_HOME}
-bin/kibana
+bin/kibana --verbose
