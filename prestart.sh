@@ -17,7 +17,7 @@ echo "Generating Configuration..."
 # Generate a databse configuration
 cat << EOF > ${PLATFORM_APP_DIR}/config/kibana_config.yml
 elasticsearch.url: ${KIBANA_ES_URL}
-path.data: ${PLATFORM_APP_DIR}/data
+path.data: ${KIBANA_HOME}/data
 pid.file: ${PLATFORM_APP_DIR}/temp/kibana.pid
 server.port: ${PORT}
 logging.verbose: true
