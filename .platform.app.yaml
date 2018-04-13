@@ -1,5 +1,5 @@
 name: billing
-type: nodejs:8.9
+type: java:8
 disk: 2048
 
 relationships:
@@ -21,8 +21,9 @@ mounts:
 
 web:
   commands:
-    start: "sh ./deploy.sh; sh ./start.sh"
+    start: "sh ./prestart.sh; sh ./start.sh"
 
 hooks:
     build: "bash ${PLATFORM_APP_DIR}/build.sh"
+    deploy: "sh ${PLATFORM_APP_DIR}/deploy.sh"
 
