@@ -1,6 +1,10 @@
 #!/bin/bash
 
-KIBANA_VERSION=6.2.3
+# Desired version can be set by means of an enviromental variable
+if [ -z "$KIBANA_VERSION" ]; then 
+	# Default to Kibana 5.6.8
+	KIBANA_VERSION=5.6.8; 
+fi
 
 KIBANA_DOWNLOAD_URI="https://artifacts.elastic.co/downloads/kibana"
 KIBANA_DL_ARCHIVE="kibana-${KIBANA_VERSION}-linux-x86_64.tar.gz"
